@@ -335,9 +335,45 @@ color:#02A350;
     padding-bottom:70px;
     }
 
+.videoPlay{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    background-color:white;
+    text-align: center;
+    color:#02A350;
+    position: absolute;
+    left: 41%;
+    top: 45%;
+    display: block;
+    cursor:pointer;
+}
+.videoPlay:hover{
+    transform: scale(1.1);
+transform: rotate(360deg);
+transition: all 1s;
+
+}
+.videoPlay i{
+    color:#02A350;
+    vertical-align: middle;
+    line-height:60px;
+    FONT-SIZE:20PX;
+    width: 100%;;
+}
 .cardImg{
     height:280px;
     overflow:hidden;
+    position: relative;
+}
+.overlayCard:before{
+position: absolute;
+content:"";
+width:100%;
+height:100%;
+z-index: 0;
+background-color:rgba(0,0,0,.35);
+
 }
 
 .ActivityCard.card{
@@ -356,7 +392,8 @@ font-size: 17px;
 }
 .ActivityCard .card-text{
     font-size:13px;
-    color:#8E8E93
+    color:#8E8E93;
+    height:43%;
 }
 .ActivityCard .readMoreBtn{
     float: left;
@@ -523,6 +560,9 @@ background-color: #02A350;
 color:white;
 transition: all .5s;
 transform: rotate(360deg);
+}
+.showVideo:hover i{
+    color:white;
 }
 .border-2{
     width:100%;
@@ -725,9 +765,11 @@ i.fa-facebook-f:hover{
     width:100%;
 }
 .eventsSliderItem{
-    height:300px;
+    height:290px;
     overflow: hidden;
     border-radius: 6px;;
+    position: relative;
+      
 }
 .heroSlider .owl-dots .owl-dot,.EventsSlider .owl-dots .owl-dot{
     width:14px;
@@ -1002,6 +1044,10 @@ float: right;
 }
 .contactItem .emailLink{
     color:#515151
+}
+.image_thumb{
+    width:100%;
+    display: block;
 }
     @-webkit-keyframes nav1 {
         50% {
@@ -1331,7 +1377,7 @@ left:0;
 top:0;
 right:0;
 position: absolute;
-display: none;
+    display: none;
 }
 .mobileNav{
     padding:10px;

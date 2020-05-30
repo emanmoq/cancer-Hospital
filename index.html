@@ -216,7 +216,12 @@
         </div>
         <div class="col-md-4">
           <div class="card ActivityCard">
-            <div class="cardImg"><img class="card-img-top" src="assets/images/activity/1.png" alt="Card image cap">
+            <div class="cardImg overlayCard">
+              <span class="videoPlay">
+                <a class="image_thumbs image_thumb" data-fancybox-type="iframe" rel="image_thumba"
+                  href="https://www.youtube.com/embed/b2Vl9RAR5Xg">
+                  <i class="lni-play"></i></a></span>
+              <img class="card-img-top" src="assets/images/activity/1.png" alt="Card image cap">
             </div>
             <div class="card-body">
               <h5 class="card-title">مستشفى الاول والسلام لعلاج السرطان</h5>
@@ -228,7 +233,7 @@
         </div>
         <div class="col-md-4">
           <div class="card ActivityCard">
-            <div class="cardImg"><img class="card-img-top" src="assets/images/activity/2.png" alt="Card image cap">
+            <div class="cardImg"> <img class="card-img-top" src="assets/images/activity/2.png" alt="Card image cap">
             </div>
             <div class="card-body">
               <h5 class="card-title"> تم اختيار مجمع الشفاء الطبي</h5>
@@ -376,29 +381,22 @@
         </div>
         <div class="col-md-12">
           <div class="EventsSlider  owl-carousel ">
-            <div class="eventsSliderItem">
+            <div class="eventsSliderItem overlayCard">
+              <span class="videoPlay">
+                <a class="image_thumbs image_thumb" data-fancybox-type="iframe" rel="image_thumba"
+                  href="https://www.youtube.com/embed/b2Vl9RAR5Xg">
+                  <i class="lni-play"></i></a></span>
               <img src="assets/images/events/1.png" alt="">
             </div>
             <div class="eventsSliderItem">
-              <img src="assets/images/events/1.png" alt="">
+              <img src="assets/images/events/2.png" alt="">
             </div>
             <div class="eventsSliderItem">
-              <img src="assets/images/events/1.png" alt="">
-            </div>
-            <div class="eventsSliderItem">
-              <img src="assets/images/events/1.png" alt="">
-            </div>
-            <div class="eventsSliderItem">
-              <img src="assets/images/events/1.png" alt="">
-            </div>
-            <div class="eventsSliderItem">
-              <img src="assets/images/events/1.png" alt="">
-            </div>
-            <div class="eventsSliderItem">
-              <img src="assets/images/events/1.png" alt="">
-            </div>
-            <div class="eventsSliderItem">
-              <img src="assets/images/events/1.png" alt="">
+              <span class="videoPlay">
+                <a class="image_thumbs image_thumb" data-fancybox-type="iframe" rel="image_thumba"
+                  href="https://www.youtube.com/embed/b2Vl9RAR5Xg">
+                  <i class="lni-play"></i></a></span>
+              <img src="assets/images/events/3.png" alt="">
             </div>
 
           </div>
@@ -567,6 +565,21 @@
       }
     });
   </script>
+      <script type="text/javascript" src="assets/js/jquery1.js"></script>
+
+    <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+    <script>
+      $(".image_thumb").fancybox({
+        openEffect: 'elastic',
+        closeEffect: 'elastic',
+        helpers: {
+          overlay: {
+            locked: false
+          }
+        }
+      });
+    </script>
+  
   <script type="text/javascript" src="assets/js/froogaloop2.min.js"></script>
   <script type="text/javascript" src="assets/js/html5lightbox.js"></script>
   <script src="assets/js/waypoints-min.js"></script>
@@ -581,18 +594,6 @@
 
 
   <script type="text/javascript" src="assets/js/main.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
-  <script>
-    $(".image_thumb").fancybox({
-      openEffect: 'elastic',
-      closeEffect: 'elastic',
-      helpers: {
-        overlay: {
-          locked: false
-        }
-      }
-    });
-  </script>
 
 
   <!--
