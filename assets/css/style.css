@@ -721,8 +721,8 @@ i.fa-facebook-f:hover{
 .EventsSlider .owl-dots, .heroSlider .owl-dots{
     position: absolute;
     bottom: -86px;
-    left: 47%;
     text-align: center;
+    width:100%;
 }
 .eventsSliderItem{
     height:300px;
@@ -1164,7 +1164,7 @@ margin-right:0;
     }
 
             #Events {
-                padding: 30px 0;
+                padding: 30px  0 120px;;
             }
             .newsTitle {
                 font-size: 12px;
@@ -1183,16 +1183,7 @@ margin-right:0;
       #news {
             padding-top: 45px;
             padding-bottom: 45px;}
-    #gallery {
-                padding-top: 50px;
-                padding-bottom: 50px;}
-    .gallerySlider .owl-nav {
-                    position: absolute;
-                    left: 44%;
-                    bottom: -10px;}
-      #misce {
-      padding-bottom: 50px;
-      }
+
     .box{
         margin: 0 auto;
         margin-bottom: 20px;
@@ -1219,7 +1210,7 @@ margin-right:0;
 .heroSec {
    
         padding-top: 174px;
-    padding-bottom: 0;
+    padding-bottom: 75px;
 
 }
 .playVideo{
@@ -1240,7 +1231,24 @@ right:96px;}
 .counterNum{
     font-size:45px
 }
-
+.accountBox{
+    margin-top:20px;
+}
+.newsSection {
+    margin-top:20px;
+}
+.EventsSlider.owl-carousel .owl-nav button.owl-prev, .EventsSlider.owl-carousel .owl-nav button.owl-next{
+    display: none;
+}
+.EventsSlider .owl-dots, .heroSlider .owl-dots{
+    left:0;
+}
+#countSec .row{
+    margin-top:0;
+}
+.heroText p{
+    margin-bottom:50px;
+}
 }
 @media(min-width:768px)and (max-width:1200px){
     .memberShipForm .form-group ,.memberShipForm .form-group label,
