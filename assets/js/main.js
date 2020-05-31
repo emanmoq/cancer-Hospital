@@ -63,11 +63,13 @@ jQuery(function ($) {
               0:{
                 items:1,
                 margin:5,
+                nav:false,
 
               },
               600:{
                 items:2,
                 margin:5,
+                nav:false
               },
               1000:{
                 items:3,

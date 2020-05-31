@@ -1334,10 +1334,12 @@ left:96px;}
 }
 #navbarNav{
     background-color:white;
-    width:50%;
+        width: 50%;
+    top: 89px;
     float:none !important;
     padding:15px;
     position: absolute;
+    padding-bottom: 50px;;
 }
 .lang{
     display: block;

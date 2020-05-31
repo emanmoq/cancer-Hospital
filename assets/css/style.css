@@ -1158,6 +1158,8 @@ margin-right:0;
     padding-bottom:50px;
 }
 
+
+
     .logo.mobileLogo {
         display: inline-block !important;
     }
@@ -1299,6 +1301,7 @@ right:96px;}
 }
 }
 @media(min-width:768px)and (max-width:1200px){
+
     .memberShipForm .form-group ,.memberShipForm .form-group label,
 .memberShipForm .form-group .form-control,.selectric-wrapper,.chzn-container,.custom-file{
     width:100% !important;
@@ -1332,10 +1335,12 @@ right:96px;}
 }
 #navbarNav{
     background-color:white;
-    width:50%;
+        width: 50%;
+    top: 89px;
     float:none !important;
     padding:15px;
     position: absolute;
+    padding-bottom: 50px;;
 }
 .lang{
     display: block;
