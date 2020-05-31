@@ -21,14 +21,14 @@ jQuery(function ($) {
 			
             var scrollPosition = $(document).scrollTop();
             $('.nav-link[href^="#"').each(function () {
-            
+              console.log($(this).attr('href')); 
               var refElement = $($(this).attr("href"));
             //   console.log($(this).attr("href")); //log
-              if (refElement.length&&refElement.position().top-150 <= scrollPosition) {
+              if (refElement.length&&refElement.position().top <= scrollPosition) {
               $('.nav-link').removeClass("active");
               $(this).addClass("active");
               }
-
+       
               else{
               $(this).removeClass("active"); 
               }
@@ -45,9 +45,8 @@ jQuery(function ($) {
               loop:true,
               nav:true,
               dots:true,
-              rtl:true,
               items:1,
-              navText :['<i class="lni-chevron-right"></i>','<i class="lni-chevron-left"></i>'],
+              navText :['<i class="lni-chevron-left"></i>','<i class="lni-chevron-right"></i>'],
             });
             setTimeout(function(){
         
@@ -56,8 +55,7 @@ jQuery(function ($) {
                 loop:true,
                 nav:true,
                 dots:true,
-                rtl:true,
-                navText :['<i class="lni-chevron-right"></i>','<i class="lni-chevron-left"></i>'],
+                navText :['<i class="lni-chevron-left"></i>','<i class="lni-chevron-right"></i>'],
             
               responsive:{
               0:{

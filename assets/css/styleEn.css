@@ -15,10 +15,10 @@ ul{
 a:hover{
     text-decoration: none;
 }
-body{direction: rtl;
+body{
     font-family: halvaticaRegular;
     color:black;
-    text-align: right;
+    text-align: left;
     position: relative;
     overflow-x: hidden;
     background-color: #F7F7F7;
@@ -34,7 +34,7 @@ img{
 header{
     position: absolute;
     top:0;
-    left:0;
+    right:0;
     height:100px;
     width:100%;
     z-index:999999999999999999999999999999999999999;
@@ -46,7 +46,7 @@ header{
     width: 100%;
     position: absolute;
     top:0;
-    right:0;
+    left:0;
     z-index: -1;
     height:770px;
 }
@@ -71,7 +71,7 @@ header{
 }
 .verticalSocial{
     position: absolute;
-    left:0;
+    right:0;
     top:60%;
     z-index: 999;
 }
@@ -84,7 +84,7 @@ header{
 }
 .lang{
     display: inline-block;
-    margin-right:38px;
+    margin-left:38px;
     position: relative;
     padding: .5rem 16px;
 
@@ -94,7 +94,7 @@ header{
     font-size:16px;
     color:#080633;
 display: inline-block;
-margin-left:7px;
+margin-right:7px;
 }
 .langdrop{
     font-size:13px;
@@ -105,7 +105,7 @@ margin-left:7px;
 
 .langdrop.dropdown-toggle::after{
 
-    left: -27px;
+    right: -27px;
     position: absolute;
     bottom: -1px;
     color: #080633;
@@ -120,8 +120,8 @@ margin-left:7px;
 .lang .dropdown-menu{
     background-color: transparent;
     border:0;
-    right:0;
-    text-align: right;
+    left:0;
+    text-align: left;
 }
 .lang .dropdown-menu{
     color:black;
@@ -147,7 +147,7 @@ margin-left:7px;
   font-size: 15px;
   font-family: a-jannat-lt-bold;
   cursor: pointer;
-text-align: left;
+text-align: right;
 position: relative;
 display: inline-block;
 }
@@ -160,8 +160,8 @@ display: inline-block;
     font-size:17px;
     color:#080633;
     position: relative;
-    padding-right: 16px;
     padding-left: 16px;
+    padding-right: 16px;
 }
 .scrollNav {
     top: 0 !important;
@@ -170,9 +170,9 @@ display: inline-block;
     position: fixed !important;
     box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
     transition: 1s all;
-    left: 0;
+    right: 0;
     width:100%;
-    right:0;
+    left:0;
     padding:10px 0;
     background-color: white;
     height:90px;
@@ -183,12 +183,12 @@ display: inline-block;
     content:"";
     position: absolute;
     height: 2px;
-    right: 12px;
+    left: 12px;
 bottom:3px;
     background-color: #02A350;
 }
 .navbar-expand-lg .navbar-nav .nav-link.active{
-    font-size:20px;
+    font-size:17px;
     font-family:halvaticaBold;
 
 }
@@ -214,7 +214,7 @@ color:#02A350;
     width:100%;
     height:100%;
     top:0;
-    left:0;
+    right:0;
     z-index: 1;
     opacity: .9;
 }
@@ -241,7 +241,7 @@ color:#02A350;
     font-size: 15px;
     line-height: 3.33;
     letter-spacing: normal;
-    text-align: right;
+    text-align: left;
     color: #515151;
     margin-top:30px;
     padding:10px 18px;
@@ -273,11 +273,11 @@ color:#02A350;
 
 }
 .regBtn:before,.readMore::before,.loginbtn:before{
-    right: 0;
+    left: 0;
     bottom: 0;
 }
 .regBtn::after,.readMore:after,.loginbtn:after{
-    left: 0;
+    right: 0;
     top: 0;
 }
 .regBtn:hover  i{
@@ -298,11 +298,11 @@ color:#02A350;
 .regBtn:hover::after,.regBtn:hover::before ,.readMore:hover::after,.readMore:hover::before ,.loginbtn:hover::before,.loginbtn:hover::after{
     height: 100%;
     width: 100%;
-    transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-    -webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-    -moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-    -o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-    -ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.9s, border-top-right-radius 0.1s ease 0.9s;
+    -webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.9s, border-top-right-radius 0.1s ease 0.9s;
+    -moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.9s, border-top-right-radius 0.1s ease 0.9s;
+    -o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.9s, border-top-right-radius 0.1s ease 0.9s;
+    -ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.9s, border-top-right-radius 0.1s ease 0.9s;
     }
     .regBtn:hover{
         background-color: transparent;
@@ -311,14 +311,14 @@ color:#02A350;
     } 
 .regBtn i{
     font-size: 20px;
-    margin-right: 16px;
+    margin-left: 16px;
     vertical-align: middle;
     color:#02A350
 }
 
 .sectionTitle .title{
     font-size: 40px;
-    text-align: right;
+    text-align: left;
     color:#000000;
     font-family:halvaticaBold;
     margin-bottom:36px;
@@ -343,7 +343,7 @@ color:#02A350;
     text-align: center;
     color:#02A350;
     position: absolute;
-    left: 41%;
+    right: 41%;
     top: 45%;
     display: block;
     cursor:pointer;
@@ -384,7 +384,7 @@ background-color:rgba(0,0,0,.35);
     height:453px;
 }
 .ActivityCard .card-body{
-    text-align: right;
+    text-align: left;
     border-top:0;
 }
 .ActivityCard .card-title{
@@ -396,13 +396,13 @@ font-size: 17px;
     height:43%;
 }
 .ActivityCard .readMoreBtn{
-    float: left;
+    float: right;
     color:white;
     font-size:10px;
     text-align: center;
     border-radius: 4px;
     background-color:#02A350;
-    width:67px;
+    width:90px;
 }
 .boxImg{
     width:59px;
@@ -428,10 +428,10 @@ padding-top:13px;
 .box:before{
     content:"";
     position: absolute;
-    left:10%;
+    right:10%;
     top:10%;
     bottom:10%;
-    right:10%;
+    left:10%;
     background-color: #98014e;
     width:100%;
     opacity: 0;
@@ -458,8 +458,8 @@ padding-top:13px;
     transition: all .5s;
     top:0;
     bottom:0;
-    right:0;
     left:0;
+    right:0;
     z-index: -1;
     opacity: 1;
 }
@@ -495,7 +495,7 @@ padding-top:13px;
     width:10%;
     height:56px;
     display: inline-block;
-    margin-left:12px;
+    margin-right:12px;
     border-radius: 4px;
     overflow: hidden;
 
@@ -503,7 +503,7 @@ padding-top:13px;
 .newsTitle {
     display:inline-block;
     font-size:20px;
-    float: left;
+    float: right;
     width: 85%;
 }
 
@@ -537,7 +537,7 @@ padding-top:13px;
     width:100%;
     height:100%;
     top:0;
-    left:0;
+    right:0;
     z-index:0;
     opacity: .9;
   
@@ -638,7 +638,7 @@ background-color:#52525B;
 footer .footerSec {
     padding:0 30px;
     display: inline-block;
-    float: right;
+    float: left;
     width: 99%;
 }
 footer .footerSec.lastlist{
@@ -646,24 +646,24 @@ footer .footerSec.lastlist{
 }
 .vl{
     height:452;
-    border-left: solid 0.5px #D8D8D8;
+    border-right: solid 0.5px #D8D8D8;
     display: inline-block;
     width:2px;
-    float:left;
+    float:right;
 }
 footer .footerSec:last-child{
-    border-left:0;
+    border-right:0;
 }
 .footerSec p{
     font-size:20px;
 }
 .footerList{
     display: inline-block;
-    margin-left:80px;
-    margin-right:15px;
+    margin-left:15px;
+    text-align: left;
 }
 .footerList:last-child{
-    margin-left:0;
+    margin-right:0;
 }
 .footerList li a{
     font-size: 20px;
@@ -685,7 +685,7 @@ font-family: halvaticaRegular;
 .emailLink{ color:white;
 text-decoration: underline;}
 .footerList.footerContact{
-    margin-right:0;
+    margin-left:0;
 }
 .footerLogo{
     width:142px;
@@ -703,13 +703,13 @@ text-decoration: underline;}
     display: inline-block;
 }
 .footerSocial{
-    text-align: right;
+    text-align: left;
     margin-top:60px;
     display: inline-block;
    
 }
 .footerSocial li {
-margin-left:25px;
+margin-right:25px;
 animation: all 1s;
 }
 .footerSocial li:hover{
@@ -751,11 +751,11 @@ i.fa-facebook-f:hover{
     color:#3d9c72;
 }
 .heroSlider .owl-nav button.owl-prev{
-    right:34%;
+    left:34%;
 
 }
 .heroSlider .owl-nav button.owl-next{
-    left:34%;
+    right:34%;
 
 }
 .EventsSlider .owl-dots, .heroSlider .owl-dots{
@@ -776,7 +776,7 @@ i.fa-facebook-f:hover{
     height:14px;
     border-radius: 50%;
     border: solid 0.5px #979797;
-    margin-right:15px;
+    margin-left:15px;
 }
 
 .heroSlider .owl-dots .owl-dot{
@@ -796,7 +796,7 @@ i.fa-facebook-f:hover{
 .EventsSlider.owl-carousel .owl-nav button.owl-prev,.EventsSlider.owl-carousel .owl-nav button.owl-next{
     font-size:55px;
     position: absolute;
-    left:-10%;;
+    right:-10%;;
     top:40%;
     
 }
@@ -804,7 +804,7 @@ i.fa-facebook-f:hover{
     color:#02A350 !important;
 }
 .EventsSlider.owl-carousel .owl-nav button.owl-prev{
-    right:-10%;
+    left:-10%;
 }
 .heroSlider .owl-dots .owl-dot.active{
     background-color: #50E3C2;
@@ -863,11 +863,11 @@ color:#000000
     margin-bottom: 30px;
     width:50%;
     display: inline-block;
-    float: right;
+    float: left;
 }
 .selectric-wrapper{
     width:70%;
-    text-align: right;
+    text-align: left;
 }
 .selectric-items li:hover {
     background-color: #7C013F;
@@ -887,7 +887,7 @@ color:white;}
     border: solid 1px #EBEBEB;
     background-color: #FAFAFA;
     height:63px;
-    margin-left:17px;
+    margin-right:17px;
 }
 .form-control:focus{
     box-shadow: none;
@@ -895,7 +895,7 @@ color:white;}
 border:1px solid #019F4E;
 }
 .form-control:last-child{
-    margin-left:0;
+    margin-right:0;
 }
 .form-control::placeholder{
     font-size: 20px;
@@ -910,7 +910,7 @@ textarea.form-control {
 }
 .send{
     width:225px;
-    float:left;
+    float:right;
     text-align: center;
     color:white;
     border:0;
@@ -1022,15 +1022,15 @@ font-family: halvaticaRegular;
 }
 .contactItem i{
     color:#02A350;
-    margin-left:20px;
+    margin-right:20px;
     display: inline-block;
     font-size: 20px;
-    float:right
+    float:left
 
 }
 .contactDesc{
 display: inline-block;
-float: right;
+float: left;
 }
 .contactSec P{
     COLOR:#515151;
@@ -1095,23 +1095,7 @@ float: right;
         /**************************************************/
 
 @media(min-width:320px)and (max-width:767px){
-    .adminForm .form-group{
-        width:100%;
-    }
-    .admminmarginRight.form-group{
-        margin-right:0;
-    }
-    .adminForm .send{
-margin:20px 0;
-float: none;
-    }
-    .mobileProfile{
-        display: block;
-        position: relative;
-    }
-    .topHeader{
-        padding:10px 0;
-    }
+
     #innerPage h1 {
         font-size: 48px;}
     #reg{
@@ -1131,16 +1115,16 @@ float: none;
         display:none;
     }
     .selectric-margin-form-group{
-        margin-right:0;
+        margin-left:0;
     }
     .selectric-margin-form-group.selectric-qualification{
-margin-right:0;
+margin-left:0;
     }
     .personalInfo .form-group label.profile{
         width:100%;
     }
     .margin-form-group{
-        margin-right: 0;;
+        margin-left: 0;;
     }
     .close{color:white;}
     .mobileNav nav.navbar {
@@ -1148,7 +1132,7 @@ margin-right:0;
         position: absolute; 
         z-index: 999999;
         top: 97px;  
-        right: 0;
+        left: 0;
         padding:0;
 }
 #navbarNav{
@@ -1176,7 +1160,7 @@ margin-right:0;
     }
     .regBtn i{
         font-size: 16px;
-        margin-right: 5px;
+        margin-left: 5px;
     }
     .heroText p {
         font-size: 13px;
@@ -1236,7 +1220,7 @@ margin-right:0;
         margin: 0 auto;
         margin-bottom: 20px;
         width: 90%;
-        padding-right:25px;
+        padding-left:25px;
        
     }
 .videoCont{
@@ -1245,7 +1229,7 @@ margin-right:0;
 }
 .heroSlider .owl-dots {
     bottom: -43px;
-    left: 23% ;
+    right: 23% ;
     width:100%;
  
 }
@@ -1272,7 +1256,7 @@ margin-right:0;
 }
 .dropdown-toggle::after {
 
-right:96px;}
+left:96px;}
 .memberShipForm .form-group ,.memberShipForm .form-group label{
     width:100%;
 }
@@ -1289,7 +1273,7 @@ right:96px;}
     display: none;
 }
 .EventsSlider .owl-dots, .heroSlider .owl-dots{
-    left:0;
+    right:0;
 }
 #countSec .row{
     margin-top:0;
@@ -1304,20 +1288,38 @@ right:96px;}
     width:100% !important;
 }
 
+.loginInfo span {
 
+    left: 0;
+    top: 34%;
+}
+.loginInfo .form-control.passwordInput{
+    margin-bottom: 30px;
+
+}
+.footerreg  .btn{
+    margin-top:20px;
+}
+.footerreg {
+    float: none;
+}
 .saveBtn,.regSendBtn {
     width:90px;
     font-size:12px;
 }
-
-
+.g-recaptcha div{
+    width:100% !important;
+}
+.loginInfo span.passwordHint{
+    bottom:2%;
+}
     .nav-link:before{
         display:none;
     }
 
     .dropdown-toggle::after {
     
-    right:96px;}
+    left:96px;}
     
     #descktopMenu{
         display: none;
@@ -1327,7 +1329,7 @@ right:96px;}
         position: absolute; 
         z-index: 999999;
         top: 0;  
-        right: 0;
+        left: 0;
         padding:0;
 }
 #navbarNav{
@@ -1357,9 +1359,9 @@ opacity: .2;
 z-index: 222;
 width:100%;
 height:100%;
-left:0;
-top:0;
 right:0;
+top:0;
+left:0;
 position: absolute;
     display: none;
 }
@@ -1367,21 +1369,42 @@ position: absolute;
     padding:10px;
 }
 
+.box{
+    margin-bottom: 10px;
+    padding: 20px;
+}
 
 section{
     padding:50px 0 !important
 }
 
-
+.gallerySlider .owl-nav{
+    bottom:-15px;
+    right:45%;
+}
 .newsSection {
     margin-top:10px;
 }
 .partnerSlider .owl-dots {
     bottom: -34px;
-     left: auto; 
+     right: auto; 
     width: 100%;
 }
-
+.eventList h5{
+    margin-bottom:0;
+    font-size:22px;
+}
+.eventList{
+    padding:10px;
+}
+.eventList ul li a {
+    font-size: 18px;}
+    .eventList ul li{
+        padding:10px 0;
+    }
+    .EventImg{
+        height:auto
+    }
     .form-group{
         margin-bottom:0
     }
